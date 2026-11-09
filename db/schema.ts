@@ -1,2 +1,2 @@
-import { sqliteTable, text, integer } from "drizzle-orm/sqlite-core";
-export const responses=sqliteTable("responses",{id:text("id").primaryKey(),name:text("name").notNull(),email:text("email").notNull().unique(),attendance:text("attendance").notNull(),guests:integer("guests").notNull(),dietary:text("dietary").notNull(),message:text("message").notNull(),createdAt:text("created_at").notNull()});
+import { pgTable, text, integer } from "drizzle-orm/pg-core";
+export const responses=pgTable("responses",{id:text("id").primaryKey(),name:text("name").notNull(),email:text("email").notNull().unique(),attendance:text("attendance").notNull(),guests:integer("guests").notNull(),dietary:text("dietary").notNull(),message:text("message").notNull(),createdAt:text("created_at").notNull()});
