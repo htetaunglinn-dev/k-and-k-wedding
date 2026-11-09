@@ -1,2 +1,3 @@
-import { pgTable, text, integer } from "drizzle-orm/pg-core";
+import { pgTable, text, integer, bigint } from "drizzle-orm/pg-core";
+export const rateLimits=pgTable("rate_limits",{key:text("key").primaryKey(),count:integer("count").notNull(),windowStart:bigint("window_start",{mode:"number"}).notNull()});
 export const responses=pgTable("responses",{id:text("id").primaryKey(),name:text("name").notNull(),email:text("email").notNull().unique(),attendance:text("attendance").notNull(),guests:integer("guests").notNull(),dietary:text("dietary").notNull(),message:text("message").notNull(),createdAt:text("created_at").notNull()});

@@ -1,4 +1,6 @@
+export const TOO_MANY_ATTEMPTS = "Too many attempts. Please wait a few minutes and try again.";
 export const japanese:Record<string,string> = {
+  [TOO_MANY_ATTEMPTS]: "試行回数が多すぎます。数分待ってからもう一度お試しください。",
   "Aung Khine Soe": "アウン　カイン　ゾー",
   "Htet Thiri Khine": "テーテリーカイン",
   "Aung Khine Soe & Htet Thiri Khine": "アウン　カイン　ゾー ＆ テーテリーカイン",
