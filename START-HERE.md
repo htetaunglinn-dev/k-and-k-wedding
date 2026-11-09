@@ -1,8 +1,9 @@
-# K & K wedding invitation — version 3
+# K & K wedding invitation — version 6
 
 Editable source for Aung Khine Soe & Htet Thiri Khine's invitation.
 Includes the seven selected photos, Canon in D audio and attribution,
-opening envelope, scratch-date reveal, RSVP API, and guest-list CSV export.
+light blue pocket envelope, scratch-date reveal, animated record player,
+English / 日本語 switch, RSVP API, and guest-list CSV export.
 
 ## Run on your computer
 
@@ -28,6 +29,7 @@ this starter is local-only and is not production authentication.
 
 - app/page.tsx: invitation wording, photo sections, music player and RSVP form
 - app/InvitationExperience.tsx: opening envelope and scratch-date interactions
+- app/Language.tsx and app/translations.ts: language switch and Japanese wording
 - app/globals.css: colours, fonts, spacing, animations and responsive layout
 - app/api/rsvp/route.ts: RSVP validation and saving
 - app/admin/page.tsx and app/api/guests/route.ts: guest management and CSV export
